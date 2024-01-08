@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from 'next/link';
+import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function HomePage() {
   return (
@@ -9,7 +10,7 @@ export default function HomePage() {
         <nav>
           <ul className="flex space-x-6 font-medium">
             <li className="hover:text-[#1E40AF] text-black transition-colors duration-300">
-              ABOUT ME
+              <Link href="/SummerVu">ABOUT ME</Link>
             </li>
             <li className="hover:text-[#1E40AF] text-black transition-colors duration-300">
                 <Link href="/../Resume">
@@ -17,13 +18,17 @@ export default function HomePage() {
                 </Link>
             </li>
             <li className="hover:text-[#1E40AF] text-black transition-colors duration-300">
-              CLASSES
+                <Link href="/../Classes">
+                    CLASSES
+                </Link>
             </li>
             <li className="hover:text-[#1E40AF] text-black transition-colors duration-300">
-              PROJECTS
+                <Link href="/../Projects">
+                    PROJECTS
+                </Link>
             </li>
             <li className="hover:text-[#1E40AF] text-black transition-colors duration-300">
-              CONTACT
+              <Link href="/Contact">CONTACT</Link>
             </li>
           </ul>
         </nav>
@@ -39,15 +44,15 @@ export default function HomePage() {
           <p className="font-light text-lg">Strategic Communicator</p>
           <hr className="border-t border-[#1E40AF] w-16 mt-2" />
           <div className="flex justify-center space-x-4 mt-6">
-            <a href="#" className="text-[#1E40AF] hover:text-[#93C5FD]">
-              <i className="fa fa-linkedin fa-lg"></i>
-            </a>
-            <a href="#" className="text-[#1E40AF] hover:text-[#93C5FD]">
-              <i className="fa fa-facebook fa-lg"></i>
-            </a>
-            <a href="#" className="text-[#1E40AF] hover:text-[#93C5FD]">
-              <i className="fa fa-instagram fa-lg"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/summer-vu-237442187/" target="_blank" rel="noopener noreferrer" className="text-[#1E40AF] hover:text-[#93C5FD]">
+                  <FaLinkedin size={32} />
+              </a>
+              <a className="text-[#1E40AF] hover:text-[#93C5FD]">
+                  <FaFacebook size={32} />
+              </a>
+              <a className="text-[#1E40AF] hover:text-[#93C5FD]">
+                  <FaInstagram size={32} />
+              </a>
           </div>
         </div>
         <div className="w-full lg:w-2/3 xl:w-3/4 p-12 bg-[#F3F4F6] mx-auto">
@@ -62,7 +67,9 @@ export default function HomePage() {
                     </Link>
                 </button>
                 <button className="border border-[#1E40AF] text-[#1E40AF] py-3 px-8 rounded-full">
-                    PROJECTS
+                    <Link href="/../Projects">
+                        Projects
+                    </Link>
                 </button>
             </div>
             <p className="mt-6 text-lg text-black font-light px-32"> 
