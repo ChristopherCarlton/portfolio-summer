@@ -73,7 +73,7 @@ export default function HomePage() {
                 </button>
             </div>
             <p className="mt-6 text-lg text-black font-light px-32"> 
-                With nearly three years in the communication industry and a degree
+                With nearly four years in the communication industry and a degree
                 in Strategic and Corporate Communication, I am excited to bring the
                 skills I have acquired to an organization's culture. I pride myself
                 on always taking on tasks with an eagerness to learn, the confidence
